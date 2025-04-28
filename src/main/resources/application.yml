@@ -1,0 +1,11 @@
+server:
+  port: 8210
+spring:
+  application:
+    name: blr-free-ai
+  codec:
+    max-in-memory-size: 30MB
+
+logging:
+  level:
+    root: info
