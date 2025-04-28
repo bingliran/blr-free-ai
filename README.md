@@ -33,17 +33,17 @@ docker run -d \
     //纯文本
     {
       "model": "deepseek-r1",
-      "messages": [{"role": "user", "content": "你好","name": "bingliran"}]
+      "messages": [{"role": "user", "content": "你好", "name": "bingliran"}]
     }
     //文本图片组合
     {
       "model": "deepseek-r1",
-      "messages": [{"role": "user", "content": "你好","name": "bingliran"},{"type":"image_url","image_url":{"url":"https://xxx.com/xxx.png"}]
+      "messages": [{"role": "user", "content": [{"type": "text", "text": "图片上是什么"}, {"type": "image_url", "image_url": {"url": "https://xxx.com/xxx.png"}], "name": "bingliran"}]
     }
     //除了url地址之外还支持base64(image/png、image/jpeg、image/jpg)
     {
       "model": "deepseek-r1",
-      "messages": [{"role": "user", "content": "你好","name": "bingliran"},{"type":"image_url","image_url":{"url":"data:image/png;base64,base64编码"}]
+      "messages": [{"role": "user", "content": [{"type": "text", "text": "图片上是什么"}, {"type": "image_url", "image_url": {"url": "data:image/png;base64,base64编码"}], "name": "bingliran"}]
     }
   ```
 * 图片生成模型(暂不支持)
