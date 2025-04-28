@@ -27,7 +27,7 @@ docker run -d \
 * 暂不支持豆包(后续更新)
 
 ### 支持的API
-* 文本生成模型(与OpenAI规范一致): `http://127.0.0.1/v1/chat/completions`
+* 文本生成模型(与OpenAI规范一致): `http://127.0.0.1:8210/v1/chat/completions`
   
   ```
     //纯文本
